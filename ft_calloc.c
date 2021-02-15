@@ -6,7 +6,7 @@
 /*   By: fheaton- <fheaton-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/30 02:34:40 by marvin            #+#    #+#             */
-/*   Updated: 2021/02/15 14:39:15 by fheaton-         ###   ########.fr       */
+/*   Updated: 2021/02/15 16:21:08 by fheaton-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,16 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (!nmemb)
 		return (NULL);
-	if (!(arr = malloc(nmemb * size)))
-		return (NULL);
-	ft_memset(arr, 0, size * nmemb);
+	if (size != 0)
+	{
+		if (!(arr = malloc(nmemb * size)))
+			return (NULL);
+		ft_memset(arr, 0, size * nmemb);
+	}
+	else
+	{
+		if (!(arr = malloc(0)))
+			return (NULL);
+	}
 	return ((void *)arr);
 }
