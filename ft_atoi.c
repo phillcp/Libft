@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fheaton- <fheaton-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: fheaton- <fheaton-@students.42.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/25 21:33:44 by marvin            #+#    #+#             */
-/*   Updated: 2021/02/15 14:55:58 by fheaton-         ###   ########.fr       */
+/*   Updated: 2021/02/16 15:42:05 by fheaton-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	ft_isspace(int c)
 	return ((c >= 9 && c <= 13) || c == 32);
 }
 
-int			ft_atoi(char *str)
+int			ft_atoi(const char *str)
 {
 	int	a;
 	int	b;
