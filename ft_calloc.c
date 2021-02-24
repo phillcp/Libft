@@ -6,7 +6,7 @@
 /*   By: fheaton- <fheaton-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/30 02:34:40 by marvin            #+#    #+#             */
-/*   Updated: 2021/02/15 16:21:08 by fheaton-         ###   ########.fr       */
+/*   Updated: 2021/02/24 16:43:31 by fheaton-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*arr;
 
-	if (!nmemb)
-		return (NULL);
 	if (size != 0)
 	{
 		if (!(arr = malloc(nmemb * size)))
